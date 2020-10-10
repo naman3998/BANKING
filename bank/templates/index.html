@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Basic Banking System App{% endblock title %}
+{% block homeactive %}active{% endblock homeactive %}
+<!-- "url(https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)" -->
+{% block style %}
+<style>
+  body {
+  background-image:url('https://images.unsplash.com/photo-1561414927-6d86591d0c4f?ixlib=rb-1.2.1&w=1000&q=80');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.fancy{font-weight:light;
+
+}
+
+</style>
+{% endblock style %}
+
+{% block body %}
+<div class="container-fluid"style = "background-color:rgba(179, 60, 0,0.7);background-size: 100%;"" >
+    <h1 class="text-center" style="color:#330a00;">The  Sparks  Foundation  Internship :</h1>
+
+      <h2 class="text-center" style="color:#330a00;">Basic Banking System Website :</h2>
+      <hr>
+
+  </div>
+<div class="container-fluid"
+    <h3 style="font-weight:bold; color:#00001a; font-size:20px"> Welcome To : </h3>
+    <h2> Banking System </h2>
+    <hr>
+    <p1  style="font-weight:light;">We will help you to transfer the amount from one user to another. </p1><br>
+      <p2 class="fancy">Instant transfer the amount of money which will be credited from one user to another. </p2>
+
+    <hr>
+    <a class="btn btn-primary btn-lg" href="/transfer_credit" role="button">Transfer Money</a>
+    <hr>
+  </div>
+{% endblock body %}
